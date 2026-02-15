@@ -2,7 +2,12 @@
 
 import mongoose from "mongoose";
 //define the mongoDb connection URL//
-const mongoURL= 'mongodb://127.0.0.1:27017/myhotels'
+// const mongoURL_local= 'mongodb://127.0.0.1:27017/myhotels'
+// const mongoURL= 'mongodb+srv://nemichand440:Myname440@cluster0.qcoxhm1.mongodb.net/';
+
+// const mongoURL_Local = process.env.MONGO_URL_LOCAL;
+const mongoURL = process.env.MONGO_URL;
+
 
 // //Set up mongoDB connection
 mongoose.connect(mongoURL);
