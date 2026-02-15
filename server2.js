@@ -1,8 +1,8 @@
 console.log('SERVER FILE LOADED');
 console.log('THIS IS THE ACTIVE SERVER FILE');
 
-import dotenv from "dotenv";
-dotenv.config();
+// import dotenv from "dotenv";
+// dotenv.config(); commenting since getting error and adding to db.js file
 
 import express from 'express'
 const app = express()

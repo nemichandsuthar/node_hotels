@@ -1,3 +1,7 @@
+
+import dotenv from "dotenv";
+dotenv.config();
+
 // const mongoose = require('mongoose');
 
 import mongoose from "mongoose";
@@ -5,11 +9,12 @@ import mongoose from "mongoose";
 // const mongoURL_local= 'mongodb://127.0.0.1:27017/myhotels'
 // const mongoURL= 'mongodb+srv://nemichand440:Myname440@cluster0.qcoxhm1.mongodb.net/';
 
-// const mongoURL_Local = process.env.MONGO_URL_LOCAL;
-const mongoURL = process.env.MONGO_URL;
+const mongoURL= process.env.MONGO_URL_LOCAL;
+// const mongoURL = process.env.MONGO_URL;
 
 
 // //Set up mongoDB connection
+// mongoose.connect(mongoURL);
 mongoose.connect(mongoURL);
 
 //     useNewUrlParser:true,
